@@ -1,0 +1,5 @@
+Cég neve: BarátPapírKFT
+Választott téma: Retro Bisztró
+Vezető fejlesztő: Molnár Áron
+Dizájner: Kozma Dávid
+Tartalomfelelős: Soltész Márton

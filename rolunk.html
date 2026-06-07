@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eszüst Kanál Étterem</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lora:wght@400;500;600&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <nav>
+    <div class="logo"><img src="./logo.png" alt="" style="border-radius: 10px; width: 50px; height: auto;">  </div>
+
+    <ul id="menu">
+        <li><a href="./index.html">Főoldal</a></li>
+
+        <li>
+            <a href="./etlap.html">Étlap</a>
+        </li>
+
+        <li><a href="./rolunk.html">Rólunk</a></li>
+        <li><a href="./kapcsolat.html">Kapcsolat</a></li>
+    </ul>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+<h1>Ezüst Kanál Étterem</h1>
+<h1>Rólunk</h1>
+<div class="cursor-ring"></div>
+<script>
+const ring = document.querySelector('.cursor-ring');
+
+document.addEventListener('mousemove', (e) => {
+    ring.style.top = e.clientY + 'px';
+    ring.style.left = e.clientX + 'px';
+});
+document.addEventListener('click', () => {
+    ring.style.transform = 'translate(-50%, -50%) scale(0.6)';
+    setTimeout(() => {
+        ring.style.transform = 'translate(-50%, -50%) scale(1)';
+    }, 150);
+});
+
+</script>
+
+<section class="rolunk-box">
+    <h2>Rólunk</h2>
+
+    <div class="rolunk-kepek">
+        <img src="./rolunk1.jpg" alt="">
+        <img src="./rolunk2.jpg" alt="">
+        <img src="./carousel1.png" alt="">
+        <img src="./carousel2.png" alt="">
+        <img src="./carousel3.png" alt="">
+    </div>
+
+    <p class="rolunk-szoveg">
+        Az Ezüst Kanál Étterem egy olyan hely, ahol a hagyományos magyar ízek találkoznak a modern,
+        elegáns tálalással. Célunk, hogy minden vendégünk úgy érezze magát, mintha hazatért volna —
+        csak éppen egy különlegesebb, melegebb, ízekben gazdagabb otthonba. Konyhánk alapja a friss,
+        minőségi alapanyagok használata, amelyeket séfünk gondosan válogat össze nap mint nap.
+
+        Ételeink között megtalálhatók a klasszikus magyar fogások, a házias kedvencek és a modern,
+        könnyed különlegességek is. Éttermünk hangulatát a vintage stílusú, meleg fényekkel megvilágított
+        belső tér határozza meg, ahol minden részlet azért született, hogy a vendégek számára egy
+        emlékezetes, otthonos élményt teremtsen.
+
+        Legyen szó családi ebédről, romantikus vacsoráról vagy baráti összejövetelről, nálunk minden
+        alkalom különleges élménnyé válik. Az Ezüst Kanál Étterem — ahol az ízek mesélnek, és minden
+        falat egy történet.
+    </p>
+</section>
+<section class="dijak-box">
+    <h2>Díjaink</h2>
+
+    <div class="dijak-kepek">
+        <div class="dij-item">
+            <img src="./evetterme.jpg" alt="Év Étterme díj">
+            <p>„Év Étterme” – 2024</p>
+        </div>
+
+        <div class="dij-item">
+            <img src="./kivalokonyha.jpg" alt="Kiváló Magyar Konyha">
+            <p>„Kiváló Magyar Konyha” minősítés</p>
+        </div>
+
+        <div class="dij-item">
+            <img src="./vendegkedvenc.jpg" alt="Vendégkedvenc étterem">
+            <p>Vendégkedvenc étterem – 2023</p>
+        </div>
+
+        <div class="dij-item">
+            <img src="./gasztrodij.jpg" alt="Gasztronómiai különdíj">
+            <p>Gasztronómiai különdíj</p>
+        </div>
+
+        <div class="dij-item">
+            <img src="./topetterem.jpg" alt="Top étterem a városban">
+            <p>Top étterem a városban</p>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="footer-box">
+        <p>© 2026 Ezüst Kanál Étterem</p>
+        <p>Minden jog fenntartva</p>
+    </div>
+</footer>
+
+</body>
+</html>

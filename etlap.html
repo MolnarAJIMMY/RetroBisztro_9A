@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eszüst Kanál Étterem</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lora:wght@400;500;600&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <nav>
+    <div class="logo"><img src="./logo.png" alt="" style="border-radius: 10px; width: 50px; height: auto;">  </div>
+
+    <ul id="menu">
+        <li><a href="./index.html">Főoldal</a></li>
+
+        <li>
+            <a href="./etlap.html">Étlap</a>
+        </li>
+
+        <li><a href="./rolunk.html">Rólunk</a></li>
+        <li><a href="./kapcsolat.html">Kapcsolat</a></li>
+    </ul>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+<h1>Ezüst Kanál Étterem</h1>
+<h1>Étlap</h1>
+<div class="cursor-ring"></div>
+<script>
+const ring = document.querySelector('.cursor-ring');
+
+document.addEventListener('mousemove', (e) => {
+    ring.style.top = e.clientY + 'px';
+    ring.style.left = e.clientX + 'px';
+});
+document.addEventListener('click', () => {
+    ring.style.transform = 'translate(-50%, -50%) scale(0.6)';
+    setTimeout(() => {
+        ring.style.transform = 'translate(-50%, -50%) scale(1)';
+    }, 150);
+});
+
+</script>
+
+<div class="etlap-box">
+    <h2>Étlap</h2>
+
+    <table class="etlap-table">
+        <tr data-img="">
+            <th>Levesek</th>
+            <th>Ár</th>
+        </tr>
+        <tr>
+            <td>Gulyásleves csészében</td>
+            <td>1 990 Ft</td>
+        </tr>
+        <tr>
+            <td>Tárkonyos csirkeraguleves</td>
+            <td>1 790 Ft</td>
+        </tr>
+
+        <tr>
+            <th>Főételek</th>
+            <th>Ár</th>
+        </tr>
+        <tr>
+            <td>Rosé kacsamell narancsos mártással</td>
+            <td>5 990 Ft</td>
+        </tr>
+        <tr>
+            <td>Házi marhapörkölt nokedlivel</td>
+            <td>4 490 Ft</td>
+        </tr>
+        <tr>
+            <td>Grillezett lazacfilé zöldségekkel</td>
+            <td>5 490 Ft</td>
+        </tr>
+        <tr>
+            <td>Rántott sertésborda petrezselymes burgonyával</td>
+            <td>3 990 Ft</td>
+        </tr>
+        <tr>
+            <td>Csirkepaprikás galuskával</td>
+            <td>3 790 Ft</td>
+        </tr>
+
+        <tr>
+            <th>Vegetáriánus</th>
+            <th>Ár</th>
+        </tr>
+        <tr>
+            <td>Rántott sajt tartárral</td>
+            <td>3 290 Ft</td>
+        </tr>
+        <tr>
+            <td>Gombapaprikás galuskával</td>
+            <td>3 490 Ft</td>
+        </tr>
+
+        <tr>
+            <th>Desszertek</th>
+            <th>Ár</th>
+        </tr>
+        <tr>
+            <td>Csokoládé szuflé vaníliafagylalttal</td>
+            <td>2 490 Ft</td>
+        </tr>
+        <tr>
+            <td>Somlói galuska</td>
+            <td>1 990 Ft</td>
+        </tr>
+        <tr>
+            <td>Aranygaluska vaníliasodóval</td>
+            <td>2 290 Ft</td>
+        </tr>
+    </table>
+
+</div>
+
+<div class="itallap-box">
+    <h2>Itallap</h2>
+
+    <table class="itallap-table">
+        <tr>
+            <th>Üdítők</th>
+            <th>Ár</th>
+        </tr>
+        <tr>
+            <td>Coca-Cola / Zero – 0,33 l</td>
+            <td>590 Ft</td>
+        </tr>
+        <tr>
+            <td>Fanta Narancs – 0,33 l</td>
+            <td>590 Ft</td>
+        </tr>
+        <tr>
+            <td>Sprite – 0,33 l</td>
+            <td>590 Ft</td>
+        </tr>
+        <tr>
+            <td>Jeges tea (citrom / barack) – 0,5 l</td>
+            <td>690 Ft</td>
+        </tr>
+        <tr>
+            <td>Ásványvíz (mentes / bubis) – 0,33 / 0,75 l</td>
+            <td>450 / 850 Ft</td>
+        </tr>
+
+        <tr>
+            <th>Sörök</th>
+            <th>Ár</th>
+        </tr>
+        <tr>
+            <td>Dreher világos – csapolt</td>
+            <td>890 Ft</td>
+        </tr>
+        <tr>
+            <td>Soproni IPA – üveges</td>
+            <td>990 Ft</td>
+        </tr>
+        <tr>
+            <td>Heineken – üveges</td>
+            <td>990 Ft</td>
+        </tr>
+
+        <tr>
+            <th>Borok</th>
+            <th>Ár</th>
+        </tr>
+        <tr>
+            <td>Tokaji Furmint (1 dl)</td>
+            <td>650 Ft</td>
+        </tr>
+        <tr>
+            <td>Egri Bikavér (1 dl)</td>
+            <td>690 Ft</td>
+        </tr>
+        <tr>
+            <td>Villányi Cabernet Sauvignon (1 dl)</td>
+            <td>750 Ft</td>
+        </tr>
+
+        <tr>
+            <th>Röviditalok</th>
+            <th>Ár</th>
+        </tr>
+        <tr>
+            <td>Unicum</td>
+            <td>990 Ft</td>
+        </tr>
+        <tr>
+            <td>Pálinka (szilva / barack / körte)</td>
+            <td>1 290 Ft</td>
+        </tr>
+        <tr>
+            <td>Vodka</td>
+            <td>890 Ft</td>
+        </tr>
+        <tr>
+            <td>Whisky</td>
+            <td>1 190 Ft</td>
+        </tr>
+
+        <tr>
+            <th>Kávék</th>
+            <th>Ár</th>
+        </tr>
+        <tr>
+            <td>Espresso</td>
+            <td>550 Ft</td>
+        </tr>
+        <tr>
+            <td>Cappuccino</td>
+            <td>690 Ft</td>
+        </tr>
+        <tr>
+            <td>Latte macchiato</td>
+            <td>790 Ft</td>
+        </tr>
+    </table>
+</div>
+<section class="seff-ajanlata">
+    <h2>A Séf Ajánlata</h2>
+
+    <div class="seff-cards">
+
+        <div class="seff-item">
+            <img src="./rosekacsamell.png" alt="">
+            <h3>Rosé kacsamell</h3>
+            <p>Narancsos mártással és édesburgonya pürével.</p>
+        </div>
+
+        <div class="seff-item">
+            <img src="./marhaporkolt.png" alt="">
+            <h3>Házi marhapörkölt</h3>
+            <p>Friss nokedlivel és házi savanyúsággal.</p>
+        </div>
+
+        <div class="seff-item">
+            <img src="./lazacfile.png" alt="">
+            <h3>Grillezett lazacfilé</h3>
+            <p>Citromos vajmártással és grillezett zöldségekkel.</p>
+        </div>
+
+        <div class="seff-item">
+            <img src="csirkepaprikas.jpg" alt="">
+            <h3>Csirkepaprikás</h3>
+            <p>Galuskával és selymes tejfölös szafttal.</p>
+        </div>
+
+        <div class="seff-item">
+            <img src="szufle.jpg" alt="">
+            <h3>Csokoládé szuflé</h3>
+            <p>Forró, lágy belsejű desszert vaníliafagylalttal.</p>
+        </div>
+
+    </div>
+</section>
+
+
+<div class="rendeles-kozep">
+    <button class="rendeles-btn" id="openOrder">Online rendelés</button>
+</div>
+
+<div class="rendeles-popup" id="orderPopup">
+    <div class="order-content">
+        <h2>Online Rendelés</h2>
+
+        <input type="text" id="r_nev" placeholder="Név">
+        <input type="tel" id="r_tel" placeholder="Telefonszám">
+        <input type="text" id="r_cim" placeholder="Cím">
+
+        <select id="r_etel">
+            <option disabled selected>Válassz ételt vagy italt</option>
+
+            <!-- Ételek -->
+            <optgroup label="Levesek">
+                <option>Gulyásleves csészében</option>
+                <option>Tárkonyos csirkeraguleves</option>
+            </optgroup>
+
+            <optgroup label="Főételek">
+                <option>Rosé kacsamell</option>
+                <option>Házi marhapörkölt</option>
+                <option>Grillezett lazacfilé</option>
+                <option>Rántott sertésborda</option>
+                <option>Csirkepaprikás</option>
+            </optgroup>
+
+            <optgroup label="Vegetáriánus">
+                <option>Rántott sajt</option>
+                <option>Gombapaprikás</option>
+            </optgroup>
+
+            <optgroup label="Desszertek">
+                <option>Csokoládé szuflé</option>
+                <option>Somlói galuska</option>
+                <option>Aranygaluska</option>
+            </optgroup>
+
+            <!-- Italok -->
+            <optgroup label="Üdítők">
+                <option>Coca-Cola / Zero</option>
+                <option>Fanta Narancs</option>
+                <option>Sprite</option>
+                <option>Jeges tea</option>
+                <option>Ásványvíz</option>
+            </optgroup>
+
+            <optgroup label="Sörök">
+                <option>Dreher világos</option>
+                <option>Soproni IPA</option>
+                <option>Heineken</option>
+            </optgroup>
+
+            <optgroup label="Borok">
+                <option>Tokaji Furmint</option>
+                <option>Egri Bikavér</option>
+                <option>Villányi Cabernet Sauvignon</option>
+            </optgroup>
+
+            <optgroup label="Röviditalok">
+                <option>Unicum</option>
+                <option>Pálinka</option>
+                <option>Vodka</option>
+                <option>Whisky</option>
+            </optgroup>
+
+            <optgroup label="Kávék">
+                <option>Espresso</option>
+                <option>Cappuccino</option>
+                <option>Latte macchiato</option>
+            </optgroup>
+        </select>
+
+        <textarea id="r_megjegyzes" placeholder="Megjegyzés (opcionális)"></textarea>
+
+        <button id="sendOrder" class="lead-btn">Rendelés leadása</button>
+    </div>
+</div>
+<script>const openOrder = document.getElementById('openOrder');
+const orderPopup = document.getElementById('orderPopup');
+const sendOrder = document.getElementById('sendOrder');
+
+openOrder.addEventListener('click', () => {
+    orderPopup.style.display = 'flex';
+    setTimeout(() => {
+        orderPopup.classList.add('show');
+    }, 10);
+});
+
+sendOrder.addEventListener('click', () => {
+    orderPopup.classList.remove('show');
+    setTimeout(() => {
+        orderPopup.style.display = 'none';
+    }, 300);
+});
+</script>
+
+
+</body>
+<footer class="footer">
+    <div class="footer-box">
+        <p>© 2026 Ezüst Kanál Étterem</p>
+        <p>Minden jog fenntartva</p>
+    </div>
+</footer>
+</html>

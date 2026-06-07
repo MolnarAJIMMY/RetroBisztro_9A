@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eszüst Kanál Étterem</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lora:wght@400;500;600&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <nav>
+    <div class="logo"><img src="./logo.png" alt="" style="border-radius: 10px; width: 50px; height: auto;">  </div>
+
+    <ul id="menu">
+        <li><a href="./index.html">Főoldal</a></li>
+
+        <li>
+            <a href="./etlap.html">Étlap</a>
+        </li>
+
+        <li><a href="./rolunk.html">Rólunk</a></li>
+        <li><a href="./kapcsolat.html">Kapcsolat</a></li>
+    </ul>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+<h1>Ezüst Kanál Étterem</h1>
+<h1>Rólunk</h1>
+<div class="cursor-ring"></div>
+<script>
+const ring = document.querySelector('.cursor-ring');
+
+document.addEventListener('mousemove', (e) => {
+    ring.style.top = e.clientY + 'px';
+    ring.style.left = e.clientX + 'px';
+});
+document.addEventListener('click', () => {
+    ring.style.transform = 'translate(-50%, -50%) scale(0.6)';
+    setTimeout(() => {
+        ring.style.transform = 'translate(-50%, -50%) scale(1)';
+    }, 150);
+});
+
+</script>
+<body>
+    <!-- KAPCSOLAT -->
+<section class="info-box" id="kapcsolat">
+    <h2>Kapcsolat</h2>
+
+   
+
+    <p class="info-text">
+        Az Ezüst Kanál Étterem csapata mindig örömmel fogadja vendégeit. Legyen szó foglalásról,
+        kérdésről, rendezvényről vagy különleges kérésekről, minden megkeresésre gyorsan és
+        segítőkészen válaszolunk. Éttermünk célja, hogy minden vendégünk otthonosan érezze magát,
+        miközben egy különleges gasztronómiai élmény részese lehet.
+    </p>
+
+    <div class="contact-details">
+        <p><strong>Cím:</strong> 1234 Budapest, Fő utca 12.</p>
+        <p><strong>Telefon:</strong> +36 30 123 4567</p>
+        <p><strong>Email:</strong> info@ezustkanal.hu</p>
+        <p><strong>Nyitvatartás:</strong> H–Cs: 11–22 • P–Szo: 11–23 • V: 11–21</p>
+    </div>
+</section>
+
+<!-- GYIK -->
+<section class="info-box" id="gyik">
+    <h2>Gyakran Ismételt Kérdések</h2>
+
+
+    <div class="gyik-list">
+        <div class="gyik-item">
+            <h3>Foglalhatok telefonon keresztül?</h3>
+            <p>Igen, minden nap 10:00-tól fogadjuk a telefonos foglalásokat.</p>
+        </div>
+
+        <div class="gyik-item">
+            <h3>Van lehetőség gluténmentes ételekre?</h3>
+            <p>Igen, étlapunk több gluténmentes opciót is tartalmaz.</p>
+        </div>
+
+        <div class="gyik-item">
+            <h3>Rendezvényeket is vállaltok?</h3>
+            <p>Igen, születésnapok, céges események és kisebb esküvők lebonyolítását is vállaljuk.</p>
+        </div>
+
+        <div class="gyik-item">
+            <h3>Van házhozszállítás?</h3>
+            <p>Igen, online rendelési rendszerünkön keresztül egyszerűen leadhatod a rendelést.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FELHASZNÁLÁSI FELTÉTELEK -->
+<section class="info-box" id="feltetelek">
+    <h2>Felhasználási Feltételek</h2>
+
+   
+
+    <p class="info-text">
+        A weboldal használatával a felhasználó elfogadja az alábbi feltételeket. A weboldalon
+        található tartalmak – beleértve a képeket, szövegeket, logókat és dizájnelemeket – az
+        Ezüst Kanál Étterem tulajdonát képezik, és engedély nélküli felhasználásuk tilos.
+        A weboldal működtetése során mindent megteszünk a pontos és naprakész információkért,
+        azonban az esetleges hibákért felelősséget nem vállalunk.
+    </p>
+</section>
+
+<!-- ADATVÉDELMI TÁJÉKOZTATÓ -->
+<section class="info-box" id="adatvedelem">
+    <h2>Adatvédelmi Tájékoztató</h2>
+
+  
+
+    <p class="info-text">
+        Az Ezüst Kanál Étterem kiemelt figyelmet fordít a személyes adatok védelmére. A foglalások,
+        online rendelések és kapcsolatfelvételek során megadott adatokat kizárólag a szolgáltatás
+        teljesítéséhez használjuk fel, harmadik félnek nem adjuk át. Az adatkezelés mindenben
+        megfelel a hatályos GDPR előírásoknak.
+    </p>
+</section>
+
+<!-- COPYRIGHT -->
+<footer class="footer">
+    <div class="footer-box">
+        <p>© 2024 Ezüst Kanál Étterem</p>
+        <p>Minden jog fenntartva</p>
+        <p>Felhasználási feltételek • Adatvédelem • Impresszum</p>
+    </div>
+</footer>
+5
+</body>
+</html>

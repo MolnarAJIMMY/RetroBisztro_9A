@@ -1,88 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
-  <title>Ezüst Kanál Étterem</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  <style>
-  .fakeimg {
-    height: 200px;
-    background: #aaa;
-  }
-  </style>
-</head>
-<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezüst Kanál Étterem</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lora:wght@400;500;600&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="">
+    
+  
+ <nav>
+    <div class="logo"><img src="./logo.png" alt="" style="border-radius: 10px; width: 50px; height: auto;">  </div>
 
-<div class="p-5 bg-primary text-white text-center">
-  <h1>My First Bootstrap 5 Page</h1>
-  <p>Resize this responsive page to see the effect!</p> 
-</div>
+    <ul id="menu">
+        <li><a href="./index.html">Főoldal</a></li>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <div class="container-fluid">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
+        <li>
+            <a href="./etlap.html">Étlap</a>
+        </li>
+
+        <li><a href="./rolunk.html">Rólunk</a></li>
+        <li><a href="./kapcsolat.html">Kapcsolat</a></li>
     </ul>
-  </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 </nav>
 
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-sm-4">
-      <h2>About Me</h2>
-      <h5>Photo of me:</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      <h3 class="mt-4">Some Links</h3>
-      <p>Lorem ipsum dolor sit ame.</p>
-      <ul class="nav nav-pills flex-column">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-      <hr class="d-sm-none">
-    </div>
-    <div class="col-sm-8">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2020</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 
-      <h2 class="mt-5">TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2020</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+<h1>Ezüst Kanál Étterem</h1>
+<header>
+    <div class="image-row">
+        <img src="carousel1.png" alt="" class=".zoomable">
+        <img src="carousel2.png" alt="" class=".zoomable">
+        <img src="carousel3.png" alt="" class=".zoomable">
+        <img src="carousel4.png" alt="" class=".zoomable">
     </div>
-  </div>
+    <div id="lightbox">
+        <img id="lightbox-img" >
+    </div>
+</header>
+<div class="cursor-ring"></div>
+<script>
+const ring = document.querySelector('.cursor-ring');
+
+document.addEventListener('mousemove', (e) => {
+    ring.style.top = e.clientY + 'px';
+    ring.style.left = e.clientX + 'px';
+});
+document.addEventListener('click', () => {
+    ring.style.transform = 'translate(-50%, -50%) scale(0.6)';
+    setTimeout(() => {
+        ring.style.transform = 'translate(-50%, -50%) scale(1)';
+    }, 150);
+});
+
+</script>
+<div class="bemutatkozas">
+    <h2>Rólunk röviden</h2>
+    <p>
+        Az Ezüst Kanál Étterem a hagyományos magyar ízek és a modern konyhaművészet találkozása. 
+        Célunk, hogy minden vendégünk különleges élménnyel térjen haza – legyen szó egy romantikus vacsoráról, 
+        családi ünneplésről vagy egy kellemes esti beszélgetésről.  
+    </p>
+</div>
+<section class="menu-ajanlo">
+    <h2>Ajánlott Ételeink</h2>
+
+    <div class="menu-cards">
+        <div class="menu-item">
+            <img src="./rosekacsamell.png" alt="">
+            <h3>Rosé kacsamell</h3>
+            <p>Ropogós kéreggel, narancsos mártással és édesburgonya pürével.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="./marhaporkolt.png" alt="">
+            <h3>Házi marhapörkölt</h3>
+            <p>Hagyományos recept alapján, friss nokedlivel és savanyúsággal.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="./lazacfile.png" alt="">
+            <h3>Grillezett lazacfilé</h3>
+            <p>Citromos vajmártással és grillezett zöldségekkel tálalva.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="./szufle.jpg" alt="">
+            <h3>Csokoládé szuflé</h3>
+            <p>Forró, lágy belsejű desszert vaníliafagylalttal.</p>
+        </div>
+    </div>
+</section>
+<div class="foglalas-kozep">
+    <button class="foglalas-btn" id="openPopup">Asztalfoglalás</button>
 </div>
 
-<div class="mt-5 p-4 bg-dark text-white text-center">
-  <p>Footer</p>
-</div>
+<div class="foglalas-popup" id="popup">
+    <div class="popup-content">
+        <h2>Asztalfoglalás</h2>
 
+        <input type="text" id="nev" placeholder="Név">
+        <input type="email" id="email" placeholder="E-mail cím">
+        <input type="tel" id="telefon" placeholder="Telefonszám">
+        <input type="date" id="datum" placeholder="Válassz dátumot">
+        <select id="fo" class="fo-valaszto">
+    <option value="" disabled selected>Hány főre?</option>
+    <option value="1">1 fő</option>
+    <option value="2">2 fő</option>
+    <option value="3">3 fő</option>
+    <option value="4">4 fő</option>
+    <option value="5">5 fő</option>
+    <option value="6">6 fő</option>
+    <option value="7">7 fő</option>
+    <option value="8">8 fő</option>
+    <option value="9">9 fő</option>
+    <option value="10">10 fő</option>
+</select>
+
+
+        <button id="closePopup" class="lefoglalom-btn">Lefoglalom</button>
+    </div>
+</div>
+<script>const openPopup = document.getElementById('openPopup');
+const popup = document.getElementById('popup');
+const closePopup = document.getElementById('closePopup');
+
+openPopup.addEventListener('click', () => {
+    popup.style.display = 'flex';
+
+    setTimeout(() => {
+        popup.classList.add('show');
+    }, 10);
+});
+
+closePopup.addEventListener('click', () => {
+    popup.classList.remove('show');
+
+    setTimeout(() => {
+        popup.style.display = 'none';
+    }, 300);
+});
+</script>
+<footer class="footer">
+    <div class="footer-box">
+        <p>© 2026 Ezüst Kanál Étterem</p>
+        <p>Minden jog fenntartva</p>
+    </div>
+</footer>
+
+
+<script src="animation.js"></script>
 </body>
 </html>
